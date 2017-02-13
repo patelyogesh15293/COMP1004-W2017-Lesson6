@@ -20,12 +20,12 @@ namespace COMP1004_W2017_Lesson6
         private void SplashFormTimer_Tick(object sender, EventArgs e)
         {
             // 1. Initialize the next form
-            CalculatorForm calculatorForm = new CalculatorForm();
+            AbilityForm abilityForm = new AbilityForm();
 
             // 2. create a refernace to the parentform
-            calculatorForm.previousForm = this;
+            abilityForm.PreviousForm = this;
             this.SplashFormTimer.Enabled = false;
-            calculatorForm.Show();
+            abilityForm.Show();
             this.Hide();
         }
     }
